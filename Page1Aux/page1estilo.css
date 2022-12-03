@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 83%;
+    background-color: blue;
+    margin: auto;
+    /* flex Padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+
+/*MENU PRINCIPAL*/
+header{
+    width: 100%;
+    background-color: #131c46;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+#menu1{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+#menu1 a:hover{
+    background-color: #fc4b18;
+    color: black;
+}
+
+#menu2{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu2 a{
+    text-decoration: none;
+   
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#boton1{
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+#boton2{
+    color:#131c46;
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+/* contenido*/
+article{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    /*flex padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+}
+
+#caja1{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /*flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+/*aside*/
+
+aside{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    background-color: #131c46;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#deriv{
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div.btncursos{
+    background-color: #fc4b18;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div.btncursos a{
+    text-decoration: none;
+    color: #131c46;
+}
+
+div.lista{
+    height: 150px;
+    margin: 10px; 
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+div.cuy{
+    display: flex;
+    text-align:end;
+}
+
+div.cuy img{
+    height: 230px;
+    bottom: 0;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color:#131c46;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+
+#menu4{
+        /*flex padre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+#menu4 li{
+    list-style-type: none;
+}
+
+#menu5{
+    
+    /*flex padre*/
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.foot2{
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+div.foot3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+div.foot3 img{
+    width: 30px;
+}

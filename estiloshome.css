@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 83%;
+    background-color: blue;
+    margin: auto;
+    /* flex Padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+
+/*MENU PRINCIPAL*/
+header{
+    width: 100%;
+    background-color: #131c46;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+#menu1{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+#menu1 a:hover{
+    background-color: #fc4b18;
+    color: black;
+}
+
+#menu2{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu2 a{
+    text-decoration: none;
+   
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#boton1{
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+#boton2{
+    color:#131c46;
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+/* Primera sección*/
+article{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    /*flex padre*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+#principal{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /*flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-image: url(Imagenes/picture-of-lovely-woman-with-piggy-bank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 490px ;
+    padding-bottom: 30px;
+  
+}
+   
+
+.banner a{
+    background-color: #fc4b18;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif ;
+    font-weight:bolder ;
+    color: black;
+    font-size: large;
+    text-align: center;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+/*seccion 2*/
+
+#carrusel{
+    display: flex;
+}
+
+div.galeria1{
+    margin: 10px 20px;
+    box-shadow: 0 3px 7px 0 lightblue;
+    float: left;
+    width: 300px;
+}
+
+div.galeria1 img{
+    width: 100%;
+    height: auto;
+}
+
+div.galeria1 :hover{
+    opacity: 70%;
+}
+
+div.carrusel1{
+    text-align: center;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+}
+
+div.carrusel1 a{
+    text-decoration: none;
+    color: #131c46;
+}
+
+
+/*seccion 3*/
+
+div.sec3 {
+    text-align: center;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+div.sec3 h1{
+    font-size: 30px;
+    color: #fc4b18;
+    padding: 10px;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color:#131c46;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+
+#menu4{
+        /*flex padre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+#menu4 li{
+    list-style-type: none;
+}
+
+#menu5{
+    
+    /*flex padre*/
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.foot2{
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+div.foot3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+div.foot3 img{
+    width: 30px;
+}
